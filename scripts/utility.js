@@ -12,6 +12,15 @@ function setBackgroundColorById(elementId){
          element.classList.add('bg-orange-400');
 }
 
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
 // function getARandomAlphabet(){
 //     //get or create an alphabet array
 //     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
@@ -28,6 +37,23 @@ function setBackgroundColorById(elementId){
 
 //     return alphabet;
 // }
+
+function getTextElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueText = element.innerText;
+    const value = parseInt(elementValueText);
+    return value;
+}
+ function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+ }
+function setTextElementValueById(elementId,value){
+        const element = document.getElementById(elementId);
+        element.innerText = value;
+}
+
 
 
 function getARandomAlphabet(){
